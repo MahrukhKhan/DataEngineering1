@@ -1,0 +1,63 @@
+﻿{
+  "Student Information": [
+    {
+      "StudentID": "Mahrukh",
+      "Program": "BA"
+    },
+    {
+      "StudentID": "Jason",
+      "Program": "BA"
+    }
+  ],
+
+  "Program Information": [
+    {
+      "Programs In Budapest ID": [
+        {
+          "MSc Business Analytics": "BA"
+        },
+        {
+          "Msc-Finance": "Fin"
+        },
+        {
+          "MA-History": "Hist"
+        }
+      ]
+    }
+  ],
+
+  "Faculty Information": [
+    {
+      "Instructor Name": "Laszlo-Sallo",
+      "Course ID": "DE1",
+      "Program Being Taught": "BA"
+    },
+    {
+      "Instructor Name": "Gábor-Békés",
+      "Course ID": "DA1",
+      "Program Being Taught": "BA"
+    }
+  ],
+
+  "Fall Semester Course Information": [
+    {
+      "CoursesID": [
+        {
+          "Data Engineering": "DE1"
+        },
+        {
+          "Data Analysis 1": "DA1"
+        },
+        {
+          "Coding With R": "C1"
+        },
+        {
+          "Practice-with-R": "PR"
+        },
+        {
+          "Data Visualisation": "DV"
+        }
+      ]
+    }
+  ]
+}
