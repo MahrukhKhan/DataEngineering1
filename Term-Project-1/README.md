@@ -68,7 +68,7 @@ To load the unique code in this operational layer, a variable 'unique_code' was 
 
 ## ETL: Analytical Layer
 
-A policy-maker would be interested in viewing data that allows them to narrow down research to create targets efficiently. I joined the 4 tables together on country, area_divide and period summed in 'unique_code' to create a denormalized central data warehouse. It neatly alligned the country description followed by the three WASH variables and open defecation for a very clear cut view. It is arranged so that for a particular year the user can compare the percentages for all variables in Rural/Urban areas in a country and view as a whole.  
+A policy-maker would be interested in viewing data that allows them to narrow down research to create targets efficiently. I joined the 4 tables together on country, area_divide and period summed in 'unique_code' to create a denormalized central data warehouse. It neatly alligned the country description followed by the three WASH variables and open defecation for a very clear cut view. It is arranged so that for a particular year the user can compare the percentages for all variables in Rural/Urban areas in a country or view as a whole.  
 
 ## ETL: Data Mart
 
