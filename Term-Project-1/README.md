@@ -43,6 +43,9 @@ Variable| Description
 percent_basic_dwater | The percentage of people having access to basic drinking water facilities from an improved source
 
 ### opendefecate
+
+Variable| Description
+------------ | -------------
 percent_opendef | The percentage of people practicing open defecation that is no method of disposal
 
 ## Data Cleaning
