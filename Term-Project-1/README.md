@@ -25,12 +25,21 @@ period_code | Character form for year
 unique_code | A variable created by joing 'country_code', 'area_divide' and 'period_code'as the data lacked a primary key
 
 ### handwash table
+
+Variable| Description
+------------ | -------------
 percent_basic_handwash | The percentage of people having access to basic handwash facilities such as a service with running water
 
 ### sanitization table
+
+Variable| Description
+------------ | -------------
 percent_basic_sanitization | The percentage of people having access to basic sanitization facilities such as functional improved sanititation for both genders
 
 ### drinkingwater
+
+Variable| Description
+------------ | -------------
 percent_basic_dwater | The percentage of people having access to basic drinking water facilities from an improved source
 
 ### opendefecate
