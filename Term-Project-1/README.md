@@ -12,6 +12,9 @@ This data set compromises of four tables. The table named 'handwash', to which t
 ## Variable Description
 
 ### Please note that the following variables are similar for all four data sets
+
+Variables | Description
+------------ | -------------
 country | Name of country
 country_code | Abbreviation for Country Name
 indicator | Explains the numerical reading i.e percentage
