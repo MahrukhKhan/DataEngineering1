@@ -59,16 +59,20 @@ The null values in excel file were shown as '..' so SQL was used to load the col
 
 ## Analytical Plan
 
+![AnalyticalPlan](https://github.com/MahrukhKhan/DataEngineering1/blob/main/Term-Project-1/MahrukhKhan_AnalyticsPlan.png)
+
 
 ## ETL: Operational Layer
 My operational layer consists of three tables that are joined to the handwash table. I ensured that coloumns in different datasets representing same data had consistent names. 
-![EER](https://github.com/MahrukhKhan/DataEngineering1/blob/main/Term-Project-1/Operational_Layer_EER.png)
+![EER](https://github.com/MahrukhKhan/DataEngineering1/blob/main/Term-Project-1/MahrukhKhan_Operational_Layer_EER.png)
 
 To load the unique code in this operational layer, a variable 'unique_code' was created causing it to initially have null values. Once data was loaded in the tables from csv files, the sql safe updates command was turned off. Utilizing the uploaded variables, data for unique code was created through 'CONCAT' hence replacing all the null values. Then safe update command was turned back on.  
 
 ## ETL: Analytical Layer
 
 A policy-maker would be interested in viewing data that allows them to narrow down research to create targets efficiently. I joined the 4 tables together on country, area_divide and period summed in 'unique_code' to create a denormalized central data warehouse. It neatly alligned the country description followed by the three WASH variables and open defecation for a very clear cut view. It is arranged so that for a particular year the user can compare the percentages for all variables in Rural/Urban areas in a country or view as a whole.  
+
+![AnalyticalLayer](https://github.com/MahrukhKhan/DataEngineering1/blob/main/Term-Project-1/MahrukhKhan_DenormalizedTable_DTL.png)
 
 ## ETL: Data Mart
 
