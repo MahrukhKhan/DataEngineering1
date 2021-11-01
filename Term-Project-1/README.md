@@ -2,12 +2,12 @@
 
 ## INTRODUCTION
 
- I put myself in the poisition of an economist who wants to analyze [WASH] https://en.wikipedia.org/wiki/WASH data to see if access to sanitation and hygiene has improved over the years. An economist would add 'open defecation' vaiable as it's sometimes not recorded under sanitiation facilities questionnaire. It is a large contributing factor to diseases such as chronic diarrhea and even reduced Height-For-Age Z score in children under the age of 5 hence holding a high significance level when regressed upon. Using a relational database would help investiagte the trends rapidly for example finding which countries are following certain WASH standards. They could narrow down their research and suggest targed-based policies. 
+ I put myself in the poisition of an economist or policy maker who wants to analyze [WASH] https://en.wikipedia.org/wiki/WASH data to see if access to sanitation and hygiene has improved over the years. Open defecation variable is added as it may not recorded under sanitiation facilities questionnaire but is a large contributing factor to causing diseases such as chronic diarrhea. Furthermore, it may explain reduced Height-For-Age Z score in children under the age of 5 hence hold a high significance level when regressed upon. Using a relational database would help investiagte trends such as finding which countries are following certain WASH standards to narrow down research and suggest targed-based policies. 
 
 ## Dataset Explanation
 
-I chose my dataset via world bank data bank [here](https://databank.worldbank.org/source/world-development-indicators#). I chose my database to be 'World Development Indicators', then I simply selected all countries followed by extraction of variable data from series and lastly, I chose time period to be 2010 - 2020. 
-This data set compromises of four tables. The table named 'handwash', to which the other tables are joined, explains the percentage of people having access to basic handwashing facilities in rural, urban and an accumalation of both areas. Similarly, 'drinkingwater' explains the percentage of people have basic facilities of drinking water and 'sanitation' explains percentage of people having access to basic sanitation facilities in all three categories. The term 'basic' defines the criteria all three WASH variables are assesed upon. The table 'opendefecate' shows the percentage of people in all three area divisions continuing to practice this due to lack of WASH availability. 
+I chose my dataset via world bank data bank [here](https://databank.worldbank.org/source/world-development-indicators#). I chose my database to be 'World Development Indicators', then I simply selected all countries followed by extraction of variable data (handwash, sanitation, drinking water and open defecation) from series and lastly, I chose time period to be 2010 - 2020. I extracted it in list form as an excel file and converted it to csv. 
+This data set compromises of four tables. The table named 'handwash', to which the other tables are joined, explains the percentage of people having access to basic handwashing facilities in rural, urban and an accumalation of both areas. Similarly, 'drinkingwater' explains the percentage of people have basic facilities of drinking water and 'sanitation' explains percentage of people having access to basic sanitation facilities in all three categories. The term 'basic' defines the criteria all three WASH variables are assesed upon. The table 'opendefecate' shows the percentage of people in all three area divisions continuing to practice open defecation due to lack of WASH availability. 
 
 ## Variable Description
 
@@ -56,6 +56,7 @@ To create a new categorical variable 'Area_Divide' so the data could be viewed m
 #### On SQL:
 Created the 'unique_code' on SQL with CONCAT command. It gave a primary key to the datasets and allowed smooth joining of datasets.
 The null values in excel file were shown as '..' so SQL was used to load the coloumns as characters and defined all such values to be null. Followed by a conversion of the numerical values to integers. 
+Period were extracted as character variables for proper functioning of the trigger. 
 
 ## Analytical Plan
 
@@ -70,7 +71,7 @@ To load the unique code in this operational layer, a variable 'unique_code' was 
 
 ## ETL: Analytical Layer
 
-A policy-maker would be interested in viewing data that allows them to narrow down research to create targets efficiently. I joined the 4 tables together on country, area_divide and period summed in 'unique_code' to create a denormalized central data warehouse. It neatly alligned the country description followed by the three WASH variables and open defecation for a very clear cut view. It is arranged so that for a particular year the user can compare the percentages for all variables in Rural/Urban areas in a country or view as a whole.  
+A policy-maker would be interested in viewing data that allows them to conduct target based research smoothly. I joined the 4 tables together on country, area_divide and period summed in 'unique_code' to create a denormalized central data warehouse. It neatly alligned the country description followed by the three WASH variables and open defecation for a very clear cut view. It is arranged so that for a particular year the user can compare the percentages for all variables in Rural/Urban areas or altogether in a country.  
 
 ![AnalyticalLayer](https://github.com/MahrukhKhan/DataEngineering1/blob/main/Term-Project-1/MahrukhKhan_DenormalizedTable_DTL.png)
 
