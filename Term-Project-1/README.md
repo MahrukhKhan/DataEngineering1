@@ -7,7 +7,9 @@
 ## Dataset Explanation
 
 I chose my dataset via world bank data bank [here](https://databank.worldbank.org/source/world-development-indicators#). I chose my database to be 'World Development Indicators', then I simply selected all countries followed by extraction of variable data (handwash, sanitation, drinking water and open defecation) from series and lastly, I chose time period to be 2010 - 2020. I extracted it in list form as an excel file and converted it to csv. 
-This data set compromises of four tables. The table named 'handwash', to which the other tables are joined, explains the percentage of people having access to basic handwashing facilities in rural, urban and an accumalation of both areas. Similarly, 'drinkingwater' explains the percentage of people have basic facilities of drinking water and 'sanitation' explains percentage of people having access to basic sanitation facilities in all three categories. The term 'basic' defines the criteria all three WASH variables are assesed upon. The table 'opendefecate' shows the percentage of people in all three area divisions continuing to practice open defecation due to lack of WASH availability. 
+This data set compromises of four tables. The table named 'handwash', to which the other tables are joined, explains the percentage of people having access to basic handwashing facilities in rural, urban and an accumalation of both areas. Similarly, 'drinkingwater' explains the percentage of people have basic facilities of drinking water and 'sanitation' explains percentage of people having access to basic sanitation facilities in all three categories. The term 'basic' defines the criteria all three WASH variables are assesed upon. The table 'opendefecate' shows the percentage of people in all three area divisions continuing to practice open defecation due to lack of WASH availability.
+
+###### I have attached the clean files in this repository for convenience. Please refer to the folder 'files'. 
 
 ## Variable Description
 
